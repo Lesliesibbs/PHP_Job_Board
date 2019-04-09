@@ -5,7 +5,7 @@
 
     <!-- Basic Page Needs
 ================================================== -->
-    <title>Jobster</title>
+    <title><?php echo SITE_TITLE; ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
