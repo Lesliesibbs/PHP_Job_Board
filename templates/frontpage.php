@@ -29,7 +29,7 @@
                         <!-- Search Field -->
                         <div class="intro-search-field with-autocomplete">
                             <label for="autocomplete-input" class="field-title ripple-effect">What Field?</label>
-                            <select class="selectpicker" name="categories">
+                            <select class="selectpicker" name="category">
                                 <?php foreach ($categories as $category) : ?>
                                     <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
                                 <?php endforeach; ?>
@@ -98,8 +98,8 @@
                 <div class="listings-container compact-list-layout margin-top-35">
                     <?php foreach ($jobs as $job) : ?>
                         <!-- Job Listing -->
-                        <a href="single-job-page.html" class="job-listing with-apply-button">
-
+                        <a href="job.php?id=<?php echo $job->id; ?>" class="job-listing with-apply-button">
+</span>
                             <!-- Job Listing Details -->
                             <div class="job-listing-details">
 
@@ -119,7 +119,6 @@
                                             </li>
                                             <li><i class="icon-material-outline-location-on"></i> <?php echo $job->location; ?> </li>
                                             <li><i class="icon-material-outline-business-center"></i> Full Time</li>
-                                            <li><i class="icon-material-outline-access-time"></i> <?php echo $job->post_date; ?> </li>
                                         </ul>
                                     </div>
                                 </div>
